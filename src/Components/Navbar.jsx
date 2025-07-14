@@ -19,13 +19,13 @@ const Navbar = () => {
   const navItem = [
     <>
       <li>
-        <a>Home</a>
+        <a href="/">Home</a>
       </li>
       <li>
         <a>About</a>
       </li>
       <li>
-        <a>Course</a>
+        <a href="/courses">Course</a>
       </li>
       <li>
         <a>Contact</a>
@@ -35,9 +35,9 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`max-w-screen-2xl container max-auto md:px-8 fixed top-0 left-0 right-0 shadow ${
+        className={`max-w-screen-2xl container max-auto md:px-8 fixed top-0 left-0 right-0 ${
           sticky
-            ? "sticky-navbar bg-gray-100 shadow-md duration-200 animation-all ease-in-out"
+            ? "sticky-navbar backdrop-blur-sm shadow-md duration-200 animation-all ease-in-out z-1"
             : ""
         }`}
       >

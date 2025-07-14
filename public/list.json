@@ -1,0 +1,98 @@
+[
+    {
+        "id":1,
+        "name":"storybook",
+        "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "price":0,
+        "category":"free",
+        "image": "https://www.freepik.com/free-vector/book-with-brown-cover_1042791.htm#fromView=keyword&page=1&position=29&uuid=59e10610-4f57-44cf-bf8f-d85beaa2610c&query=Book+Png"
+    },
+    {
+        "id":1,
+        "name":"marketing book",
+        "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "price":800,
+        "category":"paid",
+        "image": "https://www.freepik.com/free-vector/book-with-brown-cover_1042791.htm#fromView=keyword&page=1&position=29&uuid=59e10610-4f57-44cf-bf8f-d85beaa2610c&query=Book+Png"
+    },
+    {
+        "id":1,
+        "name":"storybook",
+        "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "price":0,
+        "category":"free",
+        "image": "https://www.freepik.com/free-vector/book-with-brown-cover_1042791.htm#fromView=keyword&page=1&position=29&uuid=59e10610-4f57-44cf-bf8f-d85beaa2610c&query=Book+Png"
+    },
+    {
+        "id":1,
+        "name":"storybook",
+        "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "price":0,
+        "category":"free",
+        "image": "https://www.freepik.com/free-vector/book-with-brown-cover_1042791.htm#fromView=keyword&page=1&position=29&uuid=59e10610-4f57-44cf-bf8f-d85beaa2610c&query=Book+Png"
+    },
+    {
+        "id":1,
+        "name":"poem book",
+        "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "price":530,
+        "category":"paid",
+        "image": "https://www.freepik.com/free-vector/book-with-brown-cover_1042791.htm#fromView=keyword&page=1&position=29&uuid=59e10610-4f57-44cf-bf8f-d85beaa2610c&query=Book+Png"
+    },
+    {
+        "id":1,
+        "name":"trevaling book",
+        "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "price":0,
+        "category":"free",
+        "image": "https://www.freepik.com/free-vector/book-with-brown-cover_1042791.htm#fromView=keyword&page=1&position=29&uuid=59e10610-4f57-44cf-bf8f-d85beaa2610c&query=Book+Png"
+    },
+    {
+        "id":1,
+        "name":"horror book",
+        "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "price":100,
+        "category":"paid",
+        "image": "https://www.freepik.com/free-vector/book-with-brown-cover_1042791.htm#fromView=keyword&page=1&position=29&uuid=59e10610-4f57-44cf-bf8f-d85beaa2610c&query=Book+Png"
+    },
+    {
+        "id":1,
+        "name":"storybook",
+        "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "price":0,
+        "category":"free",
+        "image": "https://www.freepik.com/free-vector/book-with-brown-cover_1042791.htm#fromView=keyword&page=1&position=29&uuid=59e10610-4f57-44cf-bf8f-d85beaa2610c&query=Book+Png"
+    },
+    {
+        "id":1,
+        "name":"cook book",
+        "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "price":200,
+        "category":"paid",
+        "image": "https://www.freepik.com/free-vector/book-with-brown-cover_1042791.htm#fromView=keyword&page=1&position=29&uuid=59e10610-4f57-44cf-bf8f-d85beaa2610c&query=Book+Png"
+    },
+    {
+        "id":1,
+        "name":"cook book",
+        "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "price":200,
+        "category":"paid",
+        "image": "https://www.freepik.com/free-vector/book-with-brown-cover_1042791.htm#fromView=keyword&page=1&position=29&uuid=59e10610-4f57-44cf-bf8f-d85beaa2610c&query=Book+Png"
+    },
+    {
+        "id":1,
+        "name":"cook book",
+        "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "price":200,
+        "category":"paid",
+        "image": "https://www.freepik.com/free-vector/book-with-brown-cover_1042791.htm#fromView=keyword&page=1&position=29&uuid=59e10610-4f57-44cf-bf8f-d85beaa2610c&query=Book+Png"
+    },
+    {
+        "id":1,
+        "name":"cook book",
+        "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "price":200,
+        "category":"paid",
+        "image": "https://www.freepik.com/free-vector/book-with-brown-cover_1042791.htm#fromView=keyword&page=1&position=29&uuid=59e10610-4f57-44cf-bf8f-d85beaa2610c&query=Book+Png"
+    }
+]
