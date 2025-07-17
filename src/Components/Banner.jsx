@@ -50,7 +50,7 @@ const Banner = () => {
             </label>
             <div className=" mt-5">
               <button className="btn join-item  bg-secondary text-white ">
-                Button
+               Sign Up
               </button>
             </div>
           </div>

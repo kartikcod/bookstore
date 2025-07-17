@@ -1,11 +1,29 @@
 import React, { useEffect, useState } from "react";
+import Login from "./Login";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  );
+  const element = document.documentElement;
+  useEffect(() => {
+    if (theme === "dark") {
+      element.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      document.body.classList.add("dark");
+    } else {
+      element.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      document.body.classList.remove("dark");
+    }
+  }, []);
+
   const [sticky, setSticky] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY>0) {
+      if (window.scrollY > 0) {
         setSticky(true);
       } else {
         setSticky(false);
@@ -14,7 +32,7 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
-    }
+    };
   }, []);
   const navItem = [
     <>
@@ -22,22 +40,22 @@ const Navbar = () => {
         <a href="/">Home</a>
       </li>
       <li>
-        <a>About</a>
+        <a href="/about">About</a>
       </li>
       <li>
         <a href="/courses">Course</a>
       </li>
       <li>
-        <a>Contact</a>
+        <a href="/contact">Contact</a>
       </li>
     </>,
   ];
   return (
     <>
       <div
-        className={`max-w-screen-2xl container max-auto md:px-8 fixed top-0 left-0 right-0 ${
+        className={`max-w-screen-2xl container max-auto dark:bg-black dark:text-white  md:px-8 fixed top-0 left-0 right-0 shadow ${
           sticky
-            ? "sticky-navbar backdrop-blur-sm shadow-md duration-200 animation-all ease-in-out z-1"
+            ? "sticky-navbar backdrop-blur-sm shadow-md dark:bg-slate-400 duration-200 animation-all ease-in-out z-50"
             : ""
         }`}
       >
@@ -72,11 +90,13 @@ const Navbar = () => {
                 {navItem}
               </ul>
             </div>
-            <a className="text-xl font-bold">BookStore</a>
+            <Link to="/">
+              <a className="text-xl font-bold">BookStore</a>
+            </Link>
           </div>
           <div className="navbar-end">
             <div className="navbar-center hidden lg:flex">
-              <ul className="menu menu-horizontal px-1 text-[15px]">
+              <ul className="menu menu-horizontal px-1 text-[16px]">
                 {navItem}
               </ul>
             </div>
@@ -112,6 +132,7 @@ const Navbar = () => {
 
                 {/* sun icon */}
                 <svg
+                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                   className="swap-off h-8 w-8 fill-current"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -121,6 +142,7 @@ const Navbar = () => {
 
                 {/* moon icon */}
                 <svg
+                  onClick={() => setTheme(theme === "light" ? "dark" : "light")}
                   className="swap-on h-8 w-8 fill-current"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -129,8 +151,16 @@ const Navbar = () => {
                 </svg>
               </label>
             </div>
-            <div className=" ">
-              <a className="btn bg-black text-white hover:bg-cyan-500">Login</a>
+            <div>
+              <a
+                className="btn bg-black text-white hover:bg-pink-700"
+                onClick={() => {
+                  document.getElementById("my_modal_3").showModal();
+                }}
+              >
+                Login
+              </a>
+              <Login />
             </div>
           </div>
         </div>

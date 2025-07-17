@@ -50,7 +50,7 @@ const Freebook = () => {
     <>
       <div className="max-w-screen-2xl container max-auto px-5 md:px-20 flex flex-col md:flex-column mt-10">
         <h1 className="font-bold">Free offered Coures</h1>
-        <p className="mt-3 text-gray-700">
+        <p className="mt-3 text-gray-600">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
           totam deserunt sequi. Asperiores amet eius laboriosam facere quisquam
           possimus ipsa.

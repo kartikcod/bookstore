@@ -19,7 +19,7 @@ const Course = () => {
         </p>
         <div className="text-center">
           <Link to="/">
-            <button className="btn btn-secondary w-20 text-center mt-6 ">
+            <button className="btn btn-secondary w-20 text-center mt-6 hover:bg-pink-700 ">
               Back
             </button>
           </Link>
