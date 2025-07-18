@@ -26,8 +26,8 @@ const Course = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 mt-12 justify-center align-center gap-5 px-5 md:px-20">
-        {List.map((item) => (
-          <Cards key={item.id} item={item} />
+        {List.map((item, index) => (
+          <Cards key={item.id ?? index} item={item} />
         ))}
       </div>
     </>

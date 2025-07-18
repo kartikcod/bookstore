@@ -8,7 +8,7 @@
                 "image": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDXr4is7-bVjWtE-TI4q-l0jHX0SPN4_4Uw&s"
     },
     {
-        "id":1,
+        "id":2,
         "name":"marketing book",
         "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "price":800,
@@ -16,7 +16,7 @@
                 "image": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDXr4is7-bVjWtE-TI4q-l0jHX0SPN4_4Uw&s"
     },
     {
-        "id":1,
+        "id":3,
         "name":"storybook",
         "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "price":0,
@@ -24,7 +24,7 @@
                 "image": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDXr4is7-bVjWtE-TI4q-l0jHX0SPN4_4Uw&s"
     },
     {
-        "id":1,
+        "id":4,
         "name":"storybook",
         "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "price":0,
@@ -32,7 +32,7 @@
                 "image": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDXr4is7-bVjWtE-TI4q-l0jHX0SPN4_4Uw&s"
     },
     {
-        "id":1,
+        "id":5,
         "name":"poem book",
         "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "price":530,
@@ -40,7 +40,7 @@
                 "image": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDXr4is7-bVjWtE-TI4q-l0jHX0SPN4_4Uw&s"
     },
     {
-        "id":1,
+        "id":6,
         "name":"trevaling book",
         "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "price":0,
@@ -48,7 +48,7 @@
                 "image": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDXr4is7-bVjWtE-TI4q-l0jHX0SPN4_4Uw&s"
     },
     {
-        "id":1,
+        "id":7,
         "name":"horror book",
         "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "price":100,
@@ -56,7 +56,7 @@
                 "image": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDXr4is7-bVjWtE-TI4q-l0jHX0SPN4_4Uw&s"
     },
     {
-        "id":1,
+        "id":8,
         "name":"storybook",
         "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "price":0,
@@ -64,7 +64,7 @@
                 "image": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDXr4is7-bVjWtE-TI4q-l0jHX0SPN4_4Uw&s"
     },
     {
-        "id":1,
+        "id":9,
         "name":"cook book",
         "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "price":200,
@@ -72,7 +72,7 @@
                 "image": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDXr4is7-bVjWtE-TI4q-l0jHX0SPN4_4Uw&s"
     },
     {
-        "id":1,
+        "id":10,
         "name":"cook book",
         "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "price":200,
@@ -80,7 +80,7 @@
                 "image": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDXr4is7-bVjWtE-TI4q-l0jHX0SPN4_4Uw&s"
     },
     {
-        "id":1,
+        "id":11,
         "name":"cook book",
         "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "price":200,
@@ -88,7 +88,7 @@
         "image": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDXr4is7-bVjWtE-TI4q-l0jHX0SPN4_4Uw&s"
     },
     {
-        "id":1,
+        "id":12,
         "name":"cook book",
         "description":"lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "price":200,

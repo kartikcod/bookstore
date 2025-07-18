@@ -90,9 +90,9 @@ const Navbar = () => {
                 {navItem}
               </ul>
             </div>
-            <Link to="/">
-              <a className="text-xl font-bold">BookStore</a>
-            </Link>
+            
+              <a href="/" className="text-xl font-bold">BookStore</a>
+            
           </div>
           <div className="navbar-end">
             <div className="navbar-center hidden lg:flex">
