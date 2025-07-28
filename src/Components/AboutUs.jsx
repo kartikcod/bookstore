@@ -42,7 +42,7 @@ var settings = {
 };
 const AboutUs = () => {
   return (
-    <div className="mt-30 text-center container mx-auto">
+    <div className="pt-30 mb-10 text-center container mx-auto dark:bg-black dark:text-white ">
       <h1 className="text-4xl font-bold text-center ">About Us</h1>
       <p className="p-4 text-gray-400 text-sm">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ut amet

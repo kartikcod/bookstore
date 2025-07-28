@@ -3,21 +3,20 @@ import Login from "./Login";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
-  );
-  const element = document.documentElement;
+
+  const [theme, setTheme] = useState(() => {
+    // Try localStorage, else system preference, else 'light'
+    const saved = localStorage.getItem('theme');
+    if (saved) return saved;
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
+    return 'light';
+  });
+
   useEffect(() => {
-    if (theme === "dark") {
-      element.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-      document.body.classList.add("dark");
-    } else {
-      element.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-      document.body.classList.remove("dark");
-    }
-  }, []);
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
 
   const [sticky, setSticky] = useState(false);
 
@@ -55,11 +54,22 @@ const Navbar = () => {
       <div
         className={`max-w-screen-2xl container max-auto dark:bg-black dark:text-white  md:px-8 fixed top-0 left-0 right-0 shadow ${
           sticky
-            ? "sticky-navbar backdrop-blur-sm shadow-md dark:bg-slate-400 duration-200 animation-all ease-in-out z-50"
+            ? "sticky-navbar backdrop-blur-sm shadow-md duration-200 animation-all ease-in-out z-50"
             : ""
         }`}
       >
         <div className="navbar ">
+          <button
+            className="btn btn-ghost normal-case text-xl mr-2"
+            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+            aria-label="Toggle dark/light mode"
+          >
+            {theme === 'light' ? (
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m8.66-8.66l-.7.7M4.34 4.34l-.7.7M21 12h-1M4 12H3m16.66 4.66l-.7-.7M4.34 19.66l-.7-.7M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+            ) : (
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12.79A9 9 0 1111.21 3a7 7 0 0010.58 9.79z" /></svg>
+            )}
+          </button>
           <div className="navbar-start">
             <div className="dropdown">
               <div
@@ -74,7 +84,6 @@ const Navbar = () => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  {" "}
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -87,7 +96,9 @@ const Navbar = () => {
                 tabIndex={0}
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
               >
-                {navItem}
+               {navItem.map((item,index)=>(
+                  <li key={index}>{item}</li>
+                ))}
               </ul>
             </div>
             

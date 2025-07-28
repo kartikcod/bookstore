@@ -15,10 +15,10 @@ const Signup = () => {
   return (
     <>
       <div>
-        <div className="flex flex-col items-center justify-center p-80 md:p-10 h-screen bg-gray-100">
+        <div className="flex flex-col items-center justify-center p-80 md:p-10 h-screen bg-gray-100 ">
           <form 
             onSubmit={handleSubmit(onSubmit)}
-            className="flex flex-col gap-4 w-96 border p-6 bg-white rounded-lg shadow-md"
+            className="flex flex-col gap-4 w-96 border p-6 bg-white text-black rounded-lg shadow-md"
           >
             <div className="flex justify-between items-center">
               <h3 className="font-bold text-start text-lg">SignUp</h3>
@@ -34,7 +34,7 @@ const Signup = () => {
 
             <label htmlFor="">Name</label>
             <input
-              className="p-2 border border-gray-400 bg-slate-100 rounded-sm"
+              className="p-2 border border-gray-400   rounded-sm"
               type="text"
               placeholder="Kartik"
               {...register("name", { required: true })}
@@ -42,25 +42,25 @@ const Signup = () => {
 
             <label htmlFor="">Email</label>
             <input
-              className="p-2 border border-gray-400 bg-slate-100 rounded-sm"
+              className="p-2 border border-gray-400   rounded-sm"
               type="email"
               placeholder="abc@gmail.com"
               {...register("email", { required: true })}
             />
             {errors.email && (
-              <span className="text-[10px] text-red-500">
+              <span className="text-[13px] text-red-500">
                 This field is required
               </span>
             )}
             <label htmlFor="">Password</label>
             <input
-              className="p-2 border border-gray-400 bg-slate-100 rounded-sm"
+              className="p-2 border border-gray-400  rounded-sm"
               type="number"
               placeholder="Kartik@0021"
               {...register("number", { required: true })}
             />
             {errors.email && (
-              <p className="text-[10px] text-red-500">
+              <p className="text-[13px] text-red-500">
                 This field is required
               </p>
             )}

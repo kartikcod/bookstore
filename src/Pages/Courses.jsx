@@ -7,7 +7,7 @@ const Courses = () => {
   return (
     <>
       <Navbar />
-      <div className='min-h-screen'>
+      <div className='min-h-screen dark:bg-black dark:text-white '>
          <Course/>
       </div>
       <Footer />

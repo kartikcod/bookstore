@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
       <Navbar />
-       <div className='h-screen '>
+       <div className='h-screen dark:bg-black dark:text-white  '>
         <AboutUs />
        </div>
      

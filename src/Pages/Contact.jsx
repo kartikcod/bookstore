@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <div className="h-screen">
+      <div className="h-screen dark:bg-black dark:text-white ">
         <ContactUs />
       </div>
       <Footer />

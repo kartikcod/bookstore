@@ -1,25 +1,21 @@
 import React from "react";
 import bookimage from "../Assets/book.png";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
     <>
-      <div className="mt-15">
+      <div className="mt-15 dark:bg-black dark:text-white ">
         <div className="max-w-screen-2xl container max-auto px-5 md:px-20 flex flex-col md:flex-row">
           <div className="w-full order-2 md:order-1 md:w-1/2">
             <div className="space-y-12 mt-12 md:mt-20">
-              <h1 className="text-3xl font-bold">
-                Hello, Welcome here to learn something
-                <span className="text-fuchsia-500 font-bold">
-                  {" "}
-                  new everyday!
-                </span>
+              <h1 className="text-3xl font-bold text ">
+                Hello, Welcome here to learn something<span className="text-fuchsia-500 font-bold"> new everyday! </span>  
               </h1>
               <p className="mt-5 word">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                veritatis exercitationem totam minima labore eum tempore,
-                consequatur odio. Sequi modi dolore, reprehenderit doloribus
-                aperiam voluptatem maxime vel ab numquam illum!
+              BookStore is your go-to destination for discovering a wide range of books—from timeless classics
+               to trending new releases. Whether you're a student, a casual reader, or a passionate bibliophile, BookStore offers carefully
+               curated collections to inspire, educate, and entertain.  
               </p>
             </div>
             <label className="input validator mt-5">
@@ -39,6 +35,7 @@ const Banner = () => {
               </svg>
 
               <input
+                className="w-full"
                 type="text"
                 required
                 placeholder="Username"
@@ -49,9 +46,11 @@ const Banner = () => {
               />
             </label>
             <div className=" mt-5">
-              <button className="btn join-item  bg-secondary text-white ">
-               Sign Up
-              </button>
+              <Link to="/signup">
+                <button className="btn join-item  bg-secondary text-white ">
+                  Sign Up
+                </button>
+              </Link>
             </div>
           </div>
           <div className="w-full md:w-1/2 mt-4 order-1 md:order-2">

@@ -7,10 +7,12 @@ import Footer from "../Components/Footer";
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <Banner />
-      <Freebook />
-      <Footer />
+      <div className="dark:bg-black dark:text-white ">
+        <Navbar />
+        <Banner />
+        <Freebook />
+        <Footer />
+      </div>
     </>
   );
 };
