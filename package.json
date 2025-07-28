@@ -1,39 +1,27 @@
 {
-  "name": "frontend",
-  "private": true,
-  "version": "0.0.0",
+  "name": "bookstore",
+  "version": "1.0.0",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " nodemon index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kartikcod/bookStores.git"
+  },
+  "author": "kartik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kartikcod/bookStores/issues"
+  },
+  "homepage": "https://github.com/kartikcod/bookStores#readme",
+  "description": "",
   "dependencies": {
-    "@coreui/coreui": "^5.4.1",
-    "@coreui/react": "^5.7.0",
-    "@tailwindcss/vite": "^4.1.11",
-    "axios": "^1.11.0",
-    "bootstrap": "^5.3.7",
-    "react": "^19.1.0",
-    "react-bootstrap": "^2.10.10",
-    "react-dom": "^19.1.0",
-    "react-hook-form": "^7.60.0",
-    "react-router-dom": "^7.6.3",
-    "react-slick": "^0.30.3",
-    "slick-carousel": "^1.8.1",
-    "tailwindcss": "^4.1.11"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.30.1",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.6.0",
-    "daisyui": "^5.0.46",
-    "eslint": "^9.30.1",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.3.0",
-    "vite": "^7.0.4"
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.5",
+    "nodemon": "^3.1.10"
   }
 }
